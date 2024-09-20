@@ -1,3 +1,14 @@
+@media (max-width: 520px) {
+    .mainflex {
+        display: block !important;
+    }
+    #fotodiv {
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 2vh;
+    }
+}
+
 
 @media (max-width: 768px) {
     .content {
@@ -19,6 +30,9 @@
     }
     #apptitle {
         padding-top: 1vh;
+    }
+    #fotodiv {
+        margin-right: 0px !important;
     }
 }
 
@@ -55,6 +69,10 @@ body {
     align-items: center;
 }
 
+#fotodiv {
+    margin-right: 2vh;
+}
+
 .jusl {
     justify-content: left;
 }
@@ -78,7 +96,7 @@ body {
     border: 1px solid white;
     color: white;
     background-color: transparent;
-    box-shadow: rgba(40, 76, 155, 0.6) 0px 4px 12px;
+    box-shadow: rgba(40, 76, 155, 0.5) 0px 4px 12px;
     border-radius: 10px;
     font-size: large;
 }
@@ -124,6 +142,7 @@ body {
     border-radius: 100%;
     width: 15vh;
     border: 1px solid #628ee0;
+    aspect-ratio: 1;
 }
 
 .flexc {
@@ -131,8 +150,8 @@ body {
     flex-direction: column;
 }
 
-.seph {
-    width: 2vh;
+.mainflex {
+    display: flex;
 }
 
 .tc {
@@ -145,6 +164,7 @@ body {
     padding: 1vh;
     font-size: medium;
     color:white;
+    box-sizing: border-box;
 }
 
 .r {
@@ -175,5 +195,12 @@ body {
 .navlink:hover i {
     color: #2f78ff;
     transition: 0.3s;
+}
 
+.info i {
+    display: none;
+}
+
+.info:hover i {
+    display: flex;
 }

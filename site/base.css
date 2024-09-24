@@ -109,7 +109,8 @@ body {
 }
 
 .content {
-    width: 40%;
+    min-width: 40%;
+    width: auto;
 }
 
 .boxtitle {
@@ -198,9 +199,9 @@ body {
 }
 
 .info i {
-    display: none;
+    color: transparent;
 }
 
 .info:hover i {
-    display: flex;
+    color: #a56ae9;
 }

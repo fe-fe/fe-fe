@@ -215,6 +215,7 @@ body {
 
 .box:hover .foto {
     border: 1px solid #913091;
+    transition: 0.3s;
 
 }
 

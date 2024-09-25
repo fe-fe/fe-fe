@@ -53,7 +53,6 @@ body {
 
 .nav {
     display: flex;
-    border-bottom: 1px solid #5472aa;
     background-color: #628ee0;
     height: auto;
     padding-inline: 5vw;
@@ -123,6 +122,7 @@ body {
     padding-block: 1vh;
     padding-inline: 2vh;
     font-size: larger;
+    transition: 0.4s;
 }
 
 .boxcontent {
@@ -130,14 +130,17 @@ body {
     border: 1px solid #628ee0;
     border-radius: 0px 0px 15px 15px;
     padding: 1.5vh;
+    transition: 0.4s;
 }
 
 .minibox {
     padding: 2vh;
     background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid #628ee0;
+
     border-radius: 8px;
 }
+
+
 
 .foto {
     border-radius: 100%;
@@ -166,19 +169,12 @@ body {
     font-size: medium;
     color:white;
     box-sizing: border-box;
-}
-
-.r {
-    border: 1px solid #e96ae9;
-    background-color: #e8d4fc;
-    color:#913091
-}
-
-.b {
     border: 1px solid #00b3ff;
     color:#006692;
     background-color: #d0e4fc;
+    transition: 0.3s;
 }
+
 
 .mt08 {
     margin-top: 0.8vh;
@@ -202,6 +198,39 @@ body {
     color: transparent;
 }
 
+.box:hover .boxtitle {
+    background-color: #913091;
+    color:#e8d4fc;
+    transition: 0.4s;
+    border: 1px solid #913091;
+    border-bottom: 0px;
+}
+
+.box:hover .boxcontent {
+    background-color: #e8d4fc;
+    color:#e8d4fc;
+    transition: 0.4s;
+    border: 1px solid #913091;
+}
+
+.box:hover .foto {
+    border: 1px solid #913091;
+
+}
+
+.box:hover .info {
+    color: #cf52cf;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(233, 106, 233, 0.5);
+
+}
+
+.info:hover {
+    border: 1px solid #e96ae9 !important;
+    background-color: hsl(288, 100%, 93%) !important;
+    transition: 0.3s;
+}
+
 .info:hover i {
-    color: #a56ae9;
+    color: rgba(255, 0, 98, 0.7);
 }
